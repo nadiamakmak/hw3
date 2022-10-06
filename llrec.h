@@ -81,8 +81,21 @@ Node* llfilter(Node* head, Comp pred)
     //*********************************************
     // Provide your implementation below
     //*********************************************
+    if(head == NULL){ //base case
+        return NULL;
+    }
 
+    Node* rest = llfilter(head->next, pred); //get to the right most node (holds the "rest")
 
+    if(pred(head->val)==true){ //if number needs to be removed
+        delete head; //delete the node we're at
+        return rest; //return the rest of the list
+    }
+    else{
+        head->next = rest; //link this node with the rest
+        return head; //return all the nodes
+    }
+    
 }
 
 #endif
