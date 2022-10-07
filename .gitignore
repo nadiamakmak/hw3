@@ -1,7 +1,9 @@
-heap.h
 heap_test/
+logicsim/
+heap.h
+
 llrec-test
 llrec-test.o
-ll-rec-test.o
-logicsim/
-stack.h
+
+
+stacktest

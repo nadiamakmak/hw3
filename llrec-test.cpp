@@ -67,9 +67,14 @@ void dealloc(Node* head)
 //   function object struct declarations
 // -----------------------------------------------
 
-
-
-
+struct OddComp {
+	bool operator()(int x) {
+		if (x%2==1){
+			return true;
+		}
+		return false;
+	}
+};
 
 int main(int argc, char* argv[])
 {
@@ -86,7 +91,8 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
-    int pivot = 9;
+		/* TESTING LLPIVOT FUNCTION */
+    /*int pivot = 9;
     Node* smaller = NULL;
     Node* larger = NULL;
 
@@ -101,7 +107,14 @@ int main(int argc, char* argv[])
 
 		dealloc(head);
 		dealloc(smaller);
-		dealloc(larger);
+		dealloc(larger);*/
+
+		/* TESTING LLFILTER FUNCTION */
+		OddComp pred;
+		cout << "After filtering (should be all evens): ";
+		Node* out = llfilter(head, pred);
+		print(out);
+		dealloc(out);
 
     return 0;
 
