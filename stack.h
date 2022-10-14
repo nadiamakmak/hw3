@@ -57,7 +57,7 @@ const T& Stack<T>::top() const{
     if(empty()){
         throw std::underflow_error("Stack is empty.");
     }
-    std::vector<T>::at(0);
+    return std::vector<T>::at(0);
 }
 
 

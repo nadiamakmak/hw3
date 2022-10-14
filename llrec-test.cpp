@@ -91,7 +91,8 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
-		/* TESTING LLPIVOT FUNCTION */
+
+	/* TESTING LLPIVOT FUNCTION */
     /*int pivot = 9;
     Node* smaller = NULL;
     Node* larger = NULL;
@@ -105,16 +106,16 @@ int main(int argc, char* argv[])
     cout << "Original list: ";
     print(head);
 
-		dealloc(head);
-		dealloc(smaller);
-		dealloc(larger);*/
+    dealloc(head);
+    dealloc(smaller);
+    dealloc(larger);*/
 
-		/* TESTING LLFILTER FUNCTION */
-		OddComp pred;
-		cout << "After filtering (should be all evens): ";
-		Node* out = llfilter(head, pred);
-		print(out);
-		dealloc(out);
+    /* TESTING LLFILTER FUNCTION */
+    OddComp pred;
+    cout << "After filtering (should be all evens): ";
+    Node* out = llfilter(head, pred);
+    print(out);
+    dealloc(out);
 
     return 0;
 
