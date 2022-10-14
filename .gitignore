@@ -1,6 +1,7 @@
 heap_test/
 logicsim/
 
+stack-test
 llrec-test
 llrec-test.o
 
