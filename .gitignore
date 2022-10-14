@@ -1,6 +1,5 @@
 heap_test/
 logicsim/
-heap.h
 
 llrec-test
 llrec-test.o
