@@ -11,13 +11,13 @@ $ ./llrec-test llrec-test1.in
 $ g++ -g -Wall --std=c++11 stack-test.cpp -o stack-test
 $ ./stack-test
 
-heap.h is extensively commented throughout. I added heapify() and trickleUp() on my own, using the algorithms part of the lecture slides with a few modifications (made heapify() check if at leaf node for optimization). All tests are passed and should run free of any valgrind error. To run (make sure in /heap_test):
+5: heap.h is extensively commented throughout. I added heapify() and trickleUp() on my own, using the algorithms part of the lecture slides with a few modifications (made heapify() check if at leaf node for optimization). All tests are passed and should run free of any valgrind error. To run (make sure in /heap_test):
 
 $ make
 $ make test
 $ make valgrind
 
-My .png outputs are in the repo (my_and.png, my_exclusive.png, my_not.png, my_or.png) and should match output .png's that were in the folder originally. To run (make sure in /logicsim):
+Logic Simulator: My .png outputs are in the repo (my_and.png, my_exclusive.png, my_not.png, my_or.png) and should match output .png's that were in the folder originally. To run (make sure in /logicsim):
 
 $ make
 $ ./logicsim <text filename>
